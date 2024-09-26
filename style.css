@@ -1,0 +1,200 @@
+body{
+    font-family: sans-serif;
+    padding-top: 60px; /* Üst menüye yer açmak için padding ekledik */
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    text-align: center;
+    position: relative;
+}
+#home img{
+    width: 100vw;
+    height: auto;
+    opacity: 0.8;
+    object-fit: cover;
+}
+.hero_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.hero_text h1{
+    font-size: 50px !important;
+    font-weight: 900;
+    color: rgb(255, 0, 247);
+    animation-name: hero_text_h1;
+    animation-duration: 2s;
+    box-shadow: 2px darkblue;
+}
+@keyframes hero_text_h1{
+    0%{
+        transform: translateX(-900px);
+    }
+    50%{
+        transform: translateX(-400px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.hero_text p{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    animation-name: hero_text_p;
+    animation-duration: 2s;
+}
+
+@keyframes hero_text_p {
+    0%{
+        transform: translateY(800px);
+    }
+    50%{
+        transform: translateY(400px);
+    }
+    75%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.top-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.top-menu a:hover{
+    color:#fff;
+    font-weight: bold;
+}
+.top-menu a::before{
+    color: #fff;
+    font-weight: bold;
+}
+.top-menu li:nth-child(2){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.review-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 20px;
+    transition: all 2s;
+    animation-name: hero_text_p;
+    animation-duration: 2s;
+}
+.review-link a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.review-link:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    transform: translateY(10px);
+}
+.review-link a:hover{
+    color: #fff;
+    font-weight: 900;
+}
+@media (max-width:768px) {
+    .hero_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+    .hero_text h1{
+        margin-top: 1.3rem;
+        font-size: 16px !important;
+        font-weight: 900;
+        color: rgb(255, 0, 0);
+    }
+    .hero_text p{
+        font-size: 12px !important;
+        font-weight: 700;
+        color: rgb(237, 137, 241);
+    }
+    .review-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+        width: 23vw;
+        height: 4vh;
+        font-weight: normal;
+        border-radius: 10px;
+        
+    }
+    .review-link a{
+        font-weight:  100 !important;
+    }
+    
+}
+
+#ürünözellikleri span{
+    margin-left: 120px;
+    margin-right: auto;
+    font-size: 40px;
+}
+.dark-mode{
+    background-color: black !important;
+    color: #fff !important;
+}
+.white{
+    color: #fff !important;
+}
+#ürünözellikleri {
+    background-color: #f0f8ff; /* AliceBlue yerine daha açık bir ton */
+    padding: 20px;
+}
+
+#ürünözellikleri h3 {
+    color: #4caf50; /* Yeşil tonu, daha yumuşak */
+    font-weight: bold;
+}
+
+#ürünözellikleri h2 {
+    color: #673ab7; /* Daha derin bir mor tonu */
+    font-weight: 900;
+}
+
+.bg-darkk {
+    background-color: #000 !important; /* Daha yumuşak bir siyah tonu */
+    color: #fff !important; /* Açık gri */
+}
+
+#yorumlar {
+    background-color: #009688; /* Daha açık bir yeşil ton */
+}
+
+#fiyatlandırma {
+    background-color: #e0e0e0; /* Açık gri, daha uyumlu bir görünüm */
+    color: #333; /* Koyu gri, okunabilirliği artırır */
+    font-weight: 700;
+}
+#dark-button {
+   margin-left: auto;
+}
+.navbar li a{
+    color: #fff;
+    font-weight: bold;
+}
